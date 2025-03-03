@@ -8,12 +8,12 @@ var answer = 1;
 
 
 draw = function(){
-  background(100,100,100);
+  background(#D8BFD8);
   fill(0, 0, 0);
   ellipse(200, 200, 375, 375);
-  fill(60, 0, 255);
+  fill(#452c63);
   triangle(200, 104, 280, 280, 120, 280);
-  fill(225, 225,225);
+  fill(#D8BFD8);
   
   if (answer == 1) {
     textSize(15)
@@ -47,8 +47,11 @@ draw = function(){
    text("🤪",random(0,600), random(0,600) );
     text("😢", random(0,600), random(0,600));
     drawFortune();
+  fill (mouseX, mouseY, 0);
+  ellipse (mouseX, mouseY, 30, 30);
   }
   
+
 };
    
 
